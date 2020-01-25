@@ -12,15 +12,17 @@
 </head>
 
 <body>
-    <h1 id="testHeading"></h1>
-    <!-- finish input and give a id -->
+    <h1 id="patioHeading"></h1>
+    <p> This is a simple calculator to determine how many pavers for your beautiful new patio</p>
+    <p><a href="https://homeguides.sfgate.com/estimating-number-paver-bricks-33037.html" target="_blank"> click here
+        </a>for more detailed information </p>
     <form>
         Please add your patio length in feet:<br>
         <input type="number" id="length" value=""><br>
         Please add your patio width in feet:<br>
         <input type="number" id="width" value=""><br>
         Click to calculate your patios square footage
-        <input type="button" id="calculate" value="Click Here">
+        <input type="button" id="calculatePatioSize" value="Click Here">
     </form>
     <div id="sqFootage"></div>
     <br>
@@ -31,21 +33,35 @@
         <option id="paver144" value=144>12 x 12</option>
         <option id="paver216" value=216>12 x 18</option>
     </select>
-    <button type="button" id="button">Get Pavers Needed</button>
+    <button type="button" id="calculatePaversNeeded">Get Pavers Needed</button>
     <div id="paverAmt"> </div>
 
-    <button type = "button" id = "resetButton" >Reset</button>
+    <button type="button" id="resetButton">Reset</button>
+
+    <p> Try this drag and drop to get an idea of the design of your patio</p>
+    <div class="grid-container">
+        <div class="grid-item">1</div>
+        <div class="grid-item">2</div>
+        <div class="grid-item">3</div>
+        <div class="grid-item">4</div>
+        <div class="grid-item">5</div>
+        <div class="grid-item">6</div>
+        <div class="grid-item">7</div>
+        <div class="grid-item">8</div>
+        <div class="grid-item">9</div>
+    </div>
+
+    <div class="empty">
+        <div class="fill" draggable='true'></div>
+    </div>
+
+    <div class="empty"></div>
+    <div class="empty"></div>
+    <div class="empty"></div>
+    <div class="empty"></div>
 
 
-    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
-        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
-        crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
-        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
-        crossorigin="anonymous"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
-        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
-        crossorigin="anonymous"></script>
+
     <script src="scripts.js"></script>
 </body>
 

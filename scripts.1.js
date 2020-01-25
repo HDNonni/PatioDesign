@@ -1,4 +1,4 @@
-document.getElementById("testHeading").innerHTML = "Build Your Own Patio";
+document.getElementById("patioHeading").innerHTML = "Build Your Own Patio";
 
 
 function sqFootOfPatio() {
@@ -33,13 +33,13 @@ function getPaverAmt(patioArea) {
 
 }
 
-document.getElementById("button").addEventListener("click", function () {
+document.getElementById("calculatePaversNeeded").addEventListener("click", function () {
     let patioArea = sqFootOfPatio();
 
     getPaverAmt(patioArea);
 });
 
-document.getElementById("calculate").addEventListener("click", function () {
+document.getElementById("calculatePatioSize").addEventListener("click", function () {
    
     let patioArea = sqFootOfPatio();
     console.log("this is patioArea :", patioArea);
